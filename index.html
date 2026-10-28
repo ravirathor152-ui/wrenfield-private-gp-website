@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b43">
+  <meta name="description" content="Wrenfield Private GP is a fictional UK clinic website concept with appointment enquiries, sample services and a room comparison slider.">
+  <title>Wrenfield Private GP — Care that listens</title>
+  <style>
+    :root{--navy:#173b43;--navy-deep:#102d34;--teal:#2e6970;--sage:#e8eee8;--mint:#c9ded3;--coral:#d78b70;--cream:#f7f7f0;--paper:#fffefa;--ink:#20363a;--muted:#66777a;--line:#d9e2de;--shadow:0 25px 70px #173b4314;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;scroll-behavior:smooth}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper)}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent}.container{width:min(1160px,calc(100% - 48px));margin-inline:auto}.demo-ribbon{padding:9px 15px;background:#dcebe2;color:#34524b;text-align:center;font-size:.67rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+    .site-header{position:sticky;top:0;z-index:20;border-bottom:1px solid #e5ebe7;background:#fffefaeF;backdrop-filter:blur(16px)}.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:78px}.brand{display:inline-flex;align-items:center;gap:11px;min-width:max-content}.brand-mark{display:grid;place-items:center;width:40px;height:40px;border-radius:50% 50% 50% 14px;background:var(--navy);color:#f4f5e8;font-family:Georgia,serif;font-size:1.1rem;font-weight:700}.brand-text{display:grid;gap:3px;line-height:1}.brand-text strong{color:var(--navy);font-family:Georgia,serif;font-size:1.03rem;letter-spacing:-.035em}.brand-text small{color:#71817f;font-size:.55rem;font-weight:800;letter-spacing:.18em}.nav-links{display:flex;align-items:center;gap:clamp(16px,2.5vw,30px);color:#566c6e;font-size:.8rem}.nav-links a:hover{color:var(--teal)}.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:47px;padding:0 20px;border:1px solid transparent;border-radius:999px;background:var(--navy);color:white;font-size:.8rem;font-weight:800;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}.button:hover{transform:translateY(-2px);background:var(--teal);box-shadow:0 10px 24px #173b4328}.button-light{background:transparent;color:var(--navy);border-color:#bacbc6}.button-light:hover{background:var(--navy);color:white;border-color:var(--navy)}.menu-toggle{display:none;width:43px;height:43px;border:1px solid var(--line);border-radius:12px;background:white;color:var(--navy);font-size:1.1rem;cursor:pointer}
+    .hero{padding:64px 0 78px;background:linear-gradient(180deg,#f5f7f1,#fffefa)}.hero-grid{display:grid;grid-template-columns:.91fr 1.09fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--teal);font-size:.68rem;font-weight:850;letter-spacing:.15em;text-transform:uppercase}.eyebrow:before{width:23px;height:1px;background:var(--coral);content:""}.hero h1{max-width:580px;margin:19px 0 18px;color:var(--navy);font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.1rem,6.7vw,5.8rem);font-weight:500;line-height:.98;letter-spacing:-.06em}.hero h1 em{color:var(--teal);font-weight:500}.hero-copy{max-width:470px;margin:0;color:#607174;font-size:1rem;line-height:1.75}.hero-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:26px}.hero-note{display:flex;align-items:center;gap:9px;margin-top:22px;color:#617377;font-size:.75rem}.status-dot{width:8px;height:8px;border-radius:50%;background:#72a488;box-shadow:0 0 0 4px #72a48820}.hero-photo{position:relative;overflow:hidden;min-height:430px;border:8px solid white;border-radius:35% 35% 16px 16px;box-shadow:var(--shadow);background:#dce9e4}.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:52% center}.photo-note{position:absolute;right:15px;bottom:15px;max-width:220px;padding:11px 14px;border:1px solid #ffffffa8;border-radius:13px;background:#fffffff0;color:#52676a;font-size:.64rem;line-height:1.45;box-shadow:0 8px 22px #173b4312}
+    .trust-row{border-block:1px solid var(--line);background:white}.trust-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;padding-block:18px;color:#587075;font-size:.75rem}.trust-item{display:flex;align-items:center;gap:9px}.trust-icon{display:grid;place-items:center;width:25px;height:25px;border-radius:50%;background:#eaf1eb;color:var(--teal);font-weight:900}
+    section{scroll-margin-top:96px}.section{padding:90px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:38px}.section-head h2,.center-head h2{max-width:670px;margin:14px 0 0;color:var(--navy);font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.3rem,4.8vw,4rem);font-weight:500;line-height:1.02;letter-spacing:-.055em}.section-head>p{max-width:400px;margin:0 0 4px;color:var(--muted);font-size:.87rem;line-height:1.75}.center-head{max-width:720px;margin:0 auto 40px;text-align:center}.center-head .eyebrow{justify-content:center}.center-head h2{margin-inline:auto}.center-head p{max-width:560px;margin:14px auto 0;color:var(--muted);font-size:.88rem;line-height:1.75}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service-card{padding:25px;border:1px solid var(--line);border-radius:20px;background:#fff;transition:transform .2s,box-shadow .2s,border-color .2s}.service-card:hover{transform:translateY(-4px);border-color:#b7cec4;box-shadow:var(--shadow)}.service-symbol{display:grid;place-items:center;width:47px;height:47px;margin-bottom:20px;border-radius:15px;background:#e8f0eb;color:var(--teal);font-size:1.2rem}.service-card h3{margin:0 0 9px;color:var(--navy);font-family:Georgia,serif;font-size:1.1rem;font-weight:600}.service-card p{margin:0;color:var(--muted);font-size:.8rem;line-height:1.7}.service-card a{display:inline-block;margin-top:17px;color:var(--teal);font-size:.75rem;font-weight:800}
+    .care-band{background:var(--navy);color:#f5f6ed}.care-grid{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:64px}.care-art{position:relative;display:grid;place-items:center;min-height:330px;overflow:hidden;border:1px solid #ffffff24;border-radius:26px;background:radial-gradient(circle at 51% 50%,#547d743f 0 22%,transparent 23%),linear-gradient(145deg,#214b51,#13343a)}.care-art:before,.care-art:after{position:absolute;width:235px;height:235px;border:1px solid #dcebe151;border-radius:50%;content:""}.care-art:after{width:300px;height:300px;border-color:#dcebe125}.care-art span{position:relative;z-index:1;color:#d9eadf;font-family:Georgia,serif;font-size:4rem}.care-copy .eyebrow{color:#d9e9dc}.care-copy .eyebrow:before{background:var(--coral)}.care-copy h2{max-width:560px;margin:16px 0;color:#f5f6ed;font-family:Georgia,serif;font-size:clamp(2.4rem,4.7vw,4.1rem);font-weight:500;line-height:.98;letter-spacing:-.06em}.care-copy>p{max-width:520px;color:#cfdbd4;font-size:.88rem;line-height:1.8}.care-list{display:grid;gap:13px;margin-top:24px}.care-point{display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start}.care-point b{display:grid;place-items:center;width:28px;height:28px;border:1px solid #99b9a8;border-radius:50%;color:#d9eadf;font-size:.7rem}.care-point span{color:#dce7df;font-size:.78rem;line-height:1.6}
+    .comparison-section{background:#f2f5ef}.comparison-heading{max-width:720px;margin:0 auto 33px;text-align:center}.comparison-heading .eyebrow{justify-content:center}.comparison-heading h2{margin:14px 0 12px;color:var(--navy);font-family:Georgia,serif;font-size:clamp(2.2rem,4.8vw,3.9rem);font-weight:500;line-height:1;letter-spacing:-.055em}.comparison-heading p{max-width:590px;margin:0 auto;color:var(--muted);font-size:.85rem;line-height:1.7}.compare-wrap{max-width:980px;margin:auto}.compare-stage{--split:50%;position:relative;isolation:isolate;overflow:hidden;height:480px;border:8px solid white;border-radius:24px;background:#dfe8e1;box-shadow:var(--shadow);cursor:ew-resize;touch-action:pan-y;user-select:none;-webkit-user-select:none}.compare-image,.compare-before img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;pointer-events:none}.compare-image.after{z-index:1}.compare-before{position:absolute;z-index:2;inset:0;overflow:hidden;clip-path:polygon(0% 0%,var(--split) 0%,var(--split) 100%,0% 100%)}.compare-before img{object-position:center}.compare-label{position:absolute;z-index:4;top:16px;padding:9px 12px;border:1px solid #ffffffaf;border-radius:999px;background:#fffffff0;color:var(--navy);font-size:.64rem;font-weight:900;letter-spacing:.12em;pointer-events:none}.compare-label.before{left:16px}.compare-label.after{right:16px}.compare-divider{position:absolute;z-index:5;top:0;bottom:0;left:var(--split);width:3px;background:white;box-shadow:0 0 14px #102d3444;transform:translateX(-50%);pointer-events:none}.compare-handle{position:absolute;top:50%;left:50%;display:grid;place-items:center;width:50px;height:50px;border:3px solid white;border-radius:50%;background:var(--teal);color:white;font-size:1.2rem;box-shadow:0 6px 18px #102d3455;transform:translate(-50%,-50%)}.compare-controls{display:grid;grid-template-columns:auto 1fr auto auto;gap:13px;align-items:center;margin:15px 9px 0;color:#486267;font-size:.72rem;font-weight:800}.compare-range{width:100%;height:28px;margin:0;accent-color:var(--teal);cursor:ew-resize}.compare-output{min-width:78px;color:var(--teal);font-size:.7rem;font-variant-numeric:tabular-nums;text-align:right}.compare-caption{margin:12px 8px 0;color:#6c7c7d;font-size:.68rem;text-align:center}.photo-disclaimer{margin:11px auto 0;color:#748381;font-size:.64rem;line-height:1.55;text-align:center}
+    .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.step-card{padding:24px 23px;border-top:2px solid #b7cec4;background:#f7f8f3}.step-card span{color:var(--teal);font-size:.68rem;font-weight:900;letter-spacing:.12em}.step-card h3{margin:22px 0 8px;color:var(--navy);font-family:Georgia,serif;font-size:1.1rem}.step-card p{margin:0;color:var(--muted);font-size:.8rem;line-height:1.7}
+    .notice{padding:17px 0;background:#f5e9dd;border-block:1px solid #ead6c5}.notice-inner{display:flex;gap:13px;align-items:flex-start;color:#614b3c;font-size:.75rem;line-height:1.6}.notice strong{color:#503c30}.notice a{color:#704c35;text-decoration:underline;text-underline-offset:3px;font-weight:800}
+    .enquiry-section{padding:84px 0;background:linear-gradient(110deg,#e9f0e9,#f9faf5)}.enquiry-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}.enquiry-copy h2{margin:14px 0;color:var(--navy);font-family:Georgia,serif;font-size:clamp(2.5rem,5vw,4.3rem);font-weight:500;line-height:.96;letter-spacing:-.06em}.enquiry-copy>p{max-width:430px;color:var(--muted);font-size:.86rem;line-height:1.75}.contact-detail{display:grid;gap:12px;margin-top:25px;color:#4e6668;font-size:.78rem}.contact-detail span{display:flex;align-items:center;gap:10px}.contact-bullet{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:white;color:var(--teal)}.form-card{padding:27px;border:1px solid #d8e3dc;border-radius:22px;background:white;box-shadow:var(--shadow)}.form-card h3{margin:0;color:var(--navy);font-family:Georgia,serif;font-size:1.35rem;font-weight:600}.form-card>p{margin:7px 0 20px;color:var(--muted);font-size:.78rem;line-height:1.65}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{color:#40585b;font-size:.69rem;font-weight:800}.field input,.field select,.field textarea{width:100%;min-height:45px;padding:11px 12px;border:1px solid #d3ded8;border-radius:10px;outline:none;color:var(--ink);background:#fcfdfa;font-size:.77rem}.field textarea{min-height:83px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px #2e69701c}.form-submit{width:100%;margin-top:16px}.form-note{margin:11px 0 0!important;color:#7a8985!important;font-size:.64rem!important;text-align:center}.form-status{display:none;margin-top:13px;padding:12px;border-radius:10px;background:#eaf2ec;color:#34554a;font-size:.76rem;line-height:1.55}.form-status.show{display:block}
+    .faq-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:62px}.faq-intro h2{margin:14px 0;color:var(--navy);font-family:Georgia,serif;font-size:clamp(2.3rem,4.5vw,3.8rem);font-weight:500;line-height:1;letter-spacing:-.055em}.faq-intro p{color:var(--muted);font-size:.84rem;line-height:1.7}.faq-list details{border-bottom:1px solid var(--line)}.faq-list details:first-child{border-top:1px solid var(--line)}.faq-list summary{position:relative;padding:20px 34px 20px 0;color:var(--navy);font-size:.82rem;font-weight:800;cursor:pointer;list-style:none}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary:after{position:absolute;right:0;top:16px;color:var(--teal);content:"+";font-size:1.25rem}.faq-list details[open] summary:after{content:"−"}.faq-list details p{max-width:620px;margin:0 28px 19px 0;color:var(--muted);font-size:.77rem;line-height:1.7}
+    .final-cta{padding:45px 0;background:var(--mint)}.final-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}.final-cta h2{max-width:730px;margin:0;color:var(--navy);font-family:Georgia,serif;font-size:clamp(1.8rem,3.7vw,3.1rem);font-weight:500;line-height:1.02;letter-spacing:-.05em}.footer{padding:40px 0 22px;background:var(--navy-deep);color:#eff4ee}.footer-top{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:28px;padding-bottom:33px}.footer .brand-text strong{color:white}.footer .brand-text small{color:#a8beb3}.footer-description{max-width:270px;margin:14px 0 0;color:#b4c7bf;font-size:.72rem;line-height:1.65}.footer-col h4{margin:3px 0 13px;color:#d5e7d8;font-size:.66rem;letter-spacing:.13em;text-transform:uppercase}.footer-col a,.footer-col p{display:block;margin:9px 0;color:#bdcdc6;font-size:.73rem}.footer-bottom{display:flex;justify-content:space-between;gap:17px;padding-top:19px;border-top:1px solid #ffffff24;color:#a4b9af;font-size:.63rem;line-height:1.6}.footer-demo{color:#cad9d2}
+    :focus-visible{outline:2px solid #d78b70;outline-offset:4px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:900px){.nav-links{gap:15px;font-size:.73rem}.nav .button{padding-inline:14px;font-size:.73rem}.hero-grid{grid-template-columns:.9fr 1.1fr;gap:28px}.hero-photo{min-height:370px}.care-grid,.enquiry-grid{gap:35px}.trust-inner{gap:11px;font-size:.68rem}.footer-top{gap:20px}}
+    @media(max-width:700px){.container{width:min(100% - 34px,560px)}.nav{min-height:68px}.menu-toggle{display:grid;place-items:center}.nav-actions{margin-left:auto}.nav-actions .button{min-height:41px;padding-inline:14px;font-size:.7rem}.nav-links{position:absolute;top:68px;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:0;padding:8px 17px 14px;border-bottom:1px solid var(--line);background:#fffefa}.nav-links.open{display:flex}.nav-links a{padding:13px 8px;border-bottom:1px solid #e5ebe7;font-size:.84rem}.hero{padding:42px 0 55px}.hero-grid{grid-template-columns:1fr;gap:28px}.hero h1{font-size:clamp(3.2rem,15vw,5rem)}.hero-copy{font-size:.91rem}.hero-photo{min-height:330px;border-radius:100px 100px 15px 15px}.trust-inner{justify-content:flex-start;overflow:auto;padding-block:14px}.trust-item{min-width:max-content;font-size:.68rem}.section{padding:68px 0}.section-head{align-items:flex-start;flex-direction:column;gap:14px;margin-bottom:27px}.section-head h2,.center-head h2{font-size:clamp(2.2rem,10.7vw,3.5rem)}.service-grid,.steps-grid{grid-template-columns:1fr}.service-card{padding:22px}.care-grid,.enquiry-grid,.faq-layout{grid-template-columns:1fr;gap:29px}.care-art{min-height:250px}.care-art:before{width:185px;height:185px}.care-art:after{width:235px;height:235px}.compare-stage{height:330px;border-width:5px}.compare-controls{grid-template-columns:auto 1fr auto;gap:9px}.compare-output{grid-column:1/-1;text-align:center}.enquiry-section{padding:68px 0}.form-card{padding:21px 17px}.final-cta-inner{align-items:flex-start;flex-direction:column}.footer-top{grid-template-columns:1fr 1fr;gap:23px 16px}.footer-brand{grid-column:1/-1}.footer-bottom{flex-direction:column}}
+    @media(max-width:430px){.demo-ribbon{font-size:.58rem}.brand-mark{width:35px;height:35px}.brand-text strong{font-size:.9rem}.brand-text small{font-size:.5rem}.nav-actions .button{padding-inline:11px}.nav-actions .button span{display:none}.hero-actions .button{width:100%}.hero-actions .button-light{width:auto}.hero-photo{min-height:275px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.compare-stage{height:270px}.footer-top{grid-template-columns:1fr 1fr}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <div class="demo-ribbon">Portfolio demo · fictional private GP clinic · Manchester, UK</div>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Wrenfield Private GP home"><span class="brand-mark" aria-hidden="true">W</span><span class="brand-text"><strong>Wrenfield</strong><small>PRIVATE GP &amp; HEALTH</small></span></a>
+      <div class="nav-links" id="navLinks"><a href="#care">Our approach</a><a href="#services">Appointments</a><a href="#before-after">Our setting</a><a href="#faq">FAQs</a></div>
+      <div class="nav-actions"><a class="button" href="#appointment">Request an appointment <span aria-hidden="true">↗</span></a><button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks"><span aria-hidden="true">☰</span></button></div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Independent private GP · Manchester</div>
+          <h1 id="heroTitle">Care that <em>listens.</em></h1>
+          <p class="hero-copy">Thoughtful appointments, clear conversations and care shaped around the person in front of us. Find the right next step with Wrenfield.</p>
+          <div class="hero-actions"><a class="button" href="#appointment">Request an appointment <span aria-hidden="true">↗</span></a><a class="button button-light" href="#services">Explore appointments</a></div>
+          <div class="hero-note"><span class="status-dot" aria-hidden="true"></span><span>In-person appointments by arrangement · sample clinic details</span></div>
+        </div>
+        <div class="hero-photo"><img src="wrenfield-gp-consultation.png" alt="Illustrative consultation between a GP and an adult patient in a calm clinic room"><div class="photo-note">Illustrative AI-generated concept image. Not a real clinician, patient or practice.</div></div>
+      </div>
+    </section>
+
+    <div class="trust-row"><div class="container trust-inner"><div class="trust-item"><span class="trust-icon" aria-hidden="true">✓</span> A welcoming first conversation</div><div class="trust-item"><span class="trust-icon" aria-hidden="true">✓</span> Clear next steps</div><div class="trust-item"><span class="trust-icon" aria-hidden="true">✓</span> Appointments by arrangement</div><div class="trust-item"><span class="trust-icon" aria-hidden="true">✓</span> Manchester, UK</div></div></div>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow">Appointments</div><h2>Start with what you need.</h2></div><p>Choose the appointment type that best fits your enquiry. The services below are examples for this website concept; a real practice should list only the care it provides.</p></div>
+        <div class="service-grid">
+          <article class="service-card"><div class="service-symbol" aria-hidden="true">＋</div><h3>GP consultation</h3><p>A one-to-one appointment to discuss a health concern, ask questions and agree a suitable next step.</p><a href="#appointment">Enquire about an appointment ↗</a></article>
+          <article class="service-card"><div class="service-symbol" aria-hidden="true">◌</div><h3>Health assessment</h3><p>A planned conversation about general wellbeing, relevant history and any checks available at the practice.</p><a href="#appointment">Ask about an assessment ↗</a></article>
+          <article class="service-card"><div class="service-symbol" aria-hidden="true">✳</div><h3>Ongoing support</h3><p>Follow-up appointments to review a concern, discuss a care plan or understand a referral pathway.</p><a href="#appointment">Discuss follow-up care ↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="care-band section" id="care">
+      <div class="container care-grid">
+        <div class="care-art" role="img" aria-label="Abstract illustration representing thoughtful patient care"><span>W.</span></div>
+        <div class="care-copy"><div class="eyebrow">The Wrenfield approach</div><h2>Good care starts with a conversation.</h2><p>We want every person to feel heard, understand the options available and know what happens next. The concept is built around a calm experience from first enquiry to follow-up.</p><div class="care-list"><div class="care-point"><b>01</b><span><strong>Listen first.</strong> Make space for the patient to explain what matters to them.</span></div><div class="care-point"><b>02</b><span><strong>Explain clearly.</strong> Use plain language and outline suitable options.</span></div><div class="care-point"><b>03</b><span><strong>Agree the next step.</strong> Confirm follow-up or signposting where appropriate.</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="section comparison-section" id="before-after">
+      <div class="container">
+        <div class="comparison-heading"><div class="eyebrow">A calmer welcome</div><h2>Ready for your visit.</h2><p>Drag the divider to compare the consultation room before and after it is prepared. This slider shows a room reset—not a medical or patient treatment result.</p></div>
+        <div class="compare-wrap">
+          <div class="compare-stage" id="compareStage" style="--split:50%" aria-label="Clinic room preparation before and after comparison">
+            <img class="compare-image after" src="wrenfield-clinic-room-after.png" alt="Illustrative clinic room prepared and ready for an appointment">
+            <div class="compare-before"><img src="wrenfield-clinic-room-before.png" alt="Illustrative clinic room before it has been prepared for an appointment"></div>
+            <span class="compare-label before" aria-hidden="true">BEFORE PREPARATION</span><span class="compare-label after" aria-hidden="true">READY FOR YOU</span>
+            <div class="compare-divider" aria-hidden="true"><span class="compare-handle">↔</span></div>
+          </div>
+          <div class="compare-controls"><span>Before</span><input class="compare-range" id="compareRange" type="range" min="0" max="100" value="50" aria-label="Drag to compare the room before and after preparation"><span>After</span><output class="compare-output" id="compareOutput">50% / 50%</output></div>
+          <p class="compare-caption">Drag across the image, move the slider, or use the arrow keys.</p>
+          <p class="photo-disclaimer">AI-generated illustrative room images for this fictional website concept. They do not depict a real practice or patient outcome.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="stepsTitle">
+      <div class="container">
+        <div class="center-head"><div class="eyebrow">A simple process</div><h2 id="stepsTitle">A clear route to an appointment.</h2><p>Use this section to explain the real practice’s booking process, response times and appointment policies.</p></div>
+        <div class="steps-grid"><article class="step-card"><span>STEP 01</span><h3>Send an enquiry</h3><p>Tell the practice what kind of appointment you are looking for and how best to contact you.</p></article><article class="step-card"><span>STEP 02</span><h3>Confirm the details</h3><p>The team can explain availability, fees, preparation and whether the practice is suitable for your needs.</p></article><article class="step-card"><span>STEP 03</span><h3>Attend your appointment</h3><p>Meet with a clinician and agree any follow-up or signposting appropriate to your consultation.</p></article></div>
+      </div>
+    </section>
+
+    <aside class="notice" aria-label="Urgent medical help">
+      <div class="container notice-inner"><strong>Need urgent help?</strong><span>This demo is not an emergency service. In England, NHS 111 can help with urgent medical concerns; call 999 or go to A&amp;E in an emergency. <a href="https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-use-111/" target="_blank" rel="noreferrer">NHS 111 guidance</a> · <a href="https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/" target="_blank" rel="noreferrer">When to call 999</a>.</span></div>
+    </aside>
+
+    <section class="enquiry-section" id="appointment">
+      <div class="container enquiry-grid">
+        <div class="enquiry-copy"><div class="eyebrow">Appointment enquiry</div><h2>Tell us how we can help.</h2><p>Use this sample form to preview the enquiry flow. No personal information is sent or stored in this demo.</p><div class="contact-detail"><span><i class="contact-bullet" aria-hidden="true">⌖</i> Manchester City Centre · example location</span><span><i class="contact-bullet" aria-hidden="true">◷</i> Appointment times by arrangement</span><span><i class="contact-bullet" aria-hidden="true">✉</i> hello@wrenfield.example · sample email</span></div></div>
+        <form class="form-card" id="appointmentForm"><h3>Request an appointment</h3><p>A member of the fictional practice team would follow up with availability and next steps.</p><div class="form-grid"><div class="field"><label for="patientName">Your name</label><input id="patientName" name="name" autocomplete="name" required placeholder="Full name"></div><div class="field"><label for="patientEmail">Email address</label><input id="patientEmail" name="email" type="email" autocomplete="email" required placeholder="you@example.co.uk"></div><div class="field"><label for="patientPostcode">Postcode</label><input id="patientPostcode" name="postcode" autocomplete="postal-code" required placeholder="M1 1AA"></div><div class="field"><label for="appointmentType">Appointment type</label><select id="appointmentType" name="type" required><option value="" disabled selected>Select an option</option><option>GP consultation</option><option>Health assessment</option><option>Follow-up appointment</option><option>Not sure yet</option></select></div><div class="field full"><label for="message">Briefly tell us what you need <span style="font-weight:500;color:var(--muted)">(please do not include sensitive medical details)</span></label><textarea id="message" name="message" placeholder="A short, non-sensitive summary"></textarea></div></div><button class="button form-submit" type="submit">Send appointment enquiry <span aria-hidden="true">↗</span></button><p class="form-note">Concept only. This form does not contact a real clinic and is not for urgent medical concerns.</p><div class="form-status" id="formStatus" role="status" aria-live="polite"></div></form>
+      </div>
+    </section>
+
+    <section class="section" id="faq"><div class="container faq-layout"><div class="faq-intro"><div class="eyebrow">Good to know</div><h2>Questions before you book?</h2><p>Clear information helps people decide whether a practice is right for them.</p></div><div class="faq-list"><details><summary>Is Wrenfield a real GP practice?</summary><p>No. Wrenfield is a fictional private-GP website concept created for a portfolio demo. Replace its identity, address, clinicians and practice information before publishing.</p></details><details><summary>Are the appointment types and policies real?</summary><p>No. The service descriptions and booking flow are sample content. A real practice should publish only services, fees and policies it has confirmed.</p></details><details><summary>Can I use the enquiry form to ask for medical advice?</summary><p>No. This demo form is not connected to a clinic and should not be used for medical advice or urgent concerns.</p></details><details><summary>Are the before-and-after images real patient results?</summary><p>No. They show an illustrative consultation-room setup only. They are AI-generated concept images and do not show a patient or treatment outcome.</p></details></div></div></section>
+
+    <section class="final-cta"><div class="container final-cta-inner"><h2>Thoughtful care begins with being heard.</h2><a class="button" href="#appointment">Request an appointment <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-top"><div><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">W</span><span class="brand-text"><strong>Wrenfield</strong><small>PRIVATE GP &amp; HEALTH</small></span></a><p class="footer-description">A fictional UK private-GP website concept focused on clear, welcoming patient communication.</p></div><div class="footer-col"><h4>Appointments</h4><a href="#services">GP consultation</a><a href="#services">Health assessment</a><a href="#appointment">Make an enquiry</a></div><div class="footer-col"><h4>Information</h4><a href="#care">Our approach</a><a href="#before-after">Our setting</a><a href="#faq">FAQs</a></div><div class="footer-col"><h4>Contact</h4><p>Manchester City Centre</p><p>hello@wrenfield.example</p><p>Appointment times by arrangement</p></div></div><div class="footer-bottom"><span>© <span id="year"></span> Wrenfield Private GP · Fictional portfolio concept</span><span class="footer-demo">Illustrative imagery and sample details. Not affiliated with the NHS.</span></div></div></footer>
+
+  <script>
+    const compareStage = document.querySelector("#compareStage");
+    const compareRange = document.querySelector("#compareRange");
+    const compareOutput = document.querySelector("#compareOutput");
+    let activePointerId = null;
+
+    function setCompare(value) {
+      const before = Math.max(0, Math.min(100, Math.round(Number(value))));
+      const after = 100 - before;
+      compareStage.style.setProperty("--split", `${before}%`);
+      compareRange.value = String(before);
+      compareRange.setAttribute("aria-valuetext", `${before}% before preparation, ${after}% after preparation`);
+      compareOutput.textContent = `${before}% / ${after}%`;
+    }
+    function updateCompareFromRange() { setCompare(compareRange.value); }
+    function updateCompareFromPointer(event) {
+      const bounds = compareStage.getBoundingClientRect();
+      if (!bounds.width) return;
+      const x = Math.max(bounds.left, Math.min(bounds.right, event.clientX));
+      setCompare(((x - bounds.left) / bounds.width) * 100);
+    }
+    compareRange.addEventListener("input", updateCompareFromRange);
+    compareStage.addEventListener("pointerdown", event => {
+      if (event.pointerType === "mouse" && event.button !== 0) return;
+      activePointerId = event.pointerId;
+      event.preventDefault();
+      updateCompareFromPointer(event);
+      try { compareStage.setPointerCapture(event.pointerId); } catch (_) { /* Range slider remains available. */ }
+    });
+    compareStage.addEventListener("pointermove", event => {
+      if (activePointerId === event.pointerId) updateCompareFromPointer(event);
+    });
+    function stopCompareDrag(event) {
+      if (activePointerId !== event.pointerId) return;
+      activePointerId = null;
+      try {
+        if (compareStage.hasPointerCapture(event.pointerId)) compareStage.releasePointerCapture(event.pointerId);
+      } catch (_) { /* Ignore cleanup after browser pointer cancellation. */ }
+    }
+    compareStage.addEventListener("pointerup", stopCompareDrag);
+    compareStage.addEventListener("pointercancel", stopCompareDrag);
+    compareStage.addEventListener("lostpointercapture", stopCompareDrag);
+    setCompare(compareRange.value);
+
+    const menuToggle = document.querySelector("#menuToggle");
+    const navLinks = document.querySelector("#navLinks");
+    menuToggle.addEventListener("click", () => {
+      const open = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", String(!open));
+      menuToggle.setAttribute("aria-label", open ? "Open navigation" : "Close navigation");
+      navLinks.classList.toggle("open", !open);
+    });
+    navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+    }));
+    document.querySelector("#appointmentForm").addEventListener("submit", event => {
+      event.preventDefault();
+      const status = document.querySelector("#formStatus");
+      status.textContent = "This is a portfolio demo, so no enquiry has been sent or saved. Connect a secure practice booking system before launch.";
+      status.classList.add("show");
+    });
+    document.querySelector("#year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
